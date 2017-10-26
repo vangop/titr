@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- <link rel="icon"  href="Chaos_Orb.png"> -->
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="jquery.min.js"></script>
+</head>
+<body>
+  <header id="top-header"></header>
+
+    <div>
+      <button type="submit" class="button">Send</button>
+      <button onclick="window.app.addTask();return false;">New task</button>
+    </div>
+    <hr/>
+    <!--tasks-->
+    <div id="tasks" class="hcenter_w80">
+
+    <!-- end of tasks -->
+    </div>
+    <hr>
+
+  </form>
+  <!-- end of form -->
+  <!--template-->
+  <section id="templates">
+    <section class="task">
+      <div class="task-title">
+        <input type="text" name="task-name" placeholder="Type a name and hit ENTER">
+        <label class="task-name hidden"></label>
+      </div>
+      <div class="task-timer">
+        <label class="task-timer-label">00:00</label>
+      </div>
+      <div class="rightmost">
+        <button class="inactivate block hcenter_w80">x</button>
+        <button class="refresh block hcenter_w80">&#128259;</button>
+      </div>
+    </section>
+  </section>
+  <!--end template-->
+  <section id="closed">
+    
+  </section>
+  <!--inactives-->
+  <section id="inactives">
+    <!--end inactives-->
+  </section>
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> -->
+  <script type="text/javascript">
+    window.jQuery || document.write('<script src="jquery.min.js"><\/script>');
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
